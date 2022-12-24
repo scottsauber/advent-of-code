@@ -4,14 +4,15 @@ public class CalorieParserService
 {
     public int FindElfWithMostCalories(string elvesCarryingCalories)
     {
-        return elvesCarryingCalories
+        var elves = elvesCarryingCalories
             .Split(Environment.NewLine + Environment.NewLine)
             .Select((x, i) => new Elf
             {
                 Number = i + 1,
                 CaloriesBeingCarried = x.Split(Environment.NewLine).Select(c => int.Parse(c)).ToList()
-            })
-            .MaxBy(x => x.CaloriesBeingCarried.Sum())!
-            .Number;
+            });
+        return elves
+            .MaxBy(x => x.TotalCalories)!
+            .TotalCalories;
     }
 }

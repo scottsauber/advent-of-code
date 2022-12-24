@@ -12,7 +12,7 @@ public class CalorieParserServiceTests
     }
 
     [Fact]
-    public void FindElfWithMostCalories_ShouldReturnNumberOfElfWithTheMostCalories()
+    public void FindMaxCalories_ShouldReturnMostCaloriesAnElfIsCarrying()
     {
         var elvesCarryingCalories = @"1000
                                       2000
@@ -31,6 +31,6 @@ public class CalorieParserServiceTests
         
         var elfNumber = _calorieParserService.FindElfWithMostCalories(elvesCarryingCalories);
         
-        elfNumber.Should().Be(4);
+        elfNumber.Should().Be(24_000);
     }
 }
