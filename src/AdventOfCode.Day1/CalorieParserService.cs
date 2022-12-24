@@ -2,21 +2,20 @@
 
 public class CalorieParserService
 {
-    public int FindElfWithMostCalories(string elvesCarryingCalories)
+    public int FindMaxCaloriesWithMostCalories(string elvesCarryingCalories)
     {
         var elves = elvesCarryingCalories
             .Split(Environment.NewLine + Environment.NewLine);
         var caloriesByElf = elves
-            .Select(x => new 
-            {
-                TotalCaloriesBeingCarried = x
+            .Select(x => x
                     .Split(Environment.NewLine)
                     .Select(c => int.Parse(c))
                     .ToList()
-                    .Sum()
-            });
+                    .Sum());
         return caloriesByElf
-            .MaxBy(x => x.TotalCaloriesBeingCarried)!
-            .TotalCaloriesBeingCarried;
+            .OrderByDescending(x => x)!
+            .Take(3)
+            .Sum();
+
     }
 }

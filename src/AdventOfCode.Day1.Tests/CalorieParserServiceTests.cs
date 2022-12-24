@@ -29,8 +29,8 @@ public class CalorieParserServiceTests
 
                                       10000";
         
-        var elfNumber = _calorieParserService.FindElfWithMostCalories(elvesCarryingCalories);
+        var elfNumber = _calorieParserService.FindMaxCaloriesWithMostCalories(elvesCarryingCalories);
         
-        elfNumber.Should().Be(24_000);
+        elfNumber.Should().Be(45_000);
     }
 }

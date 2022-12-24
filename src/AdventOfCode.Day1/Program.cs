@@ -2,6 +2,6 @@
 
 var file = File.ReadAllText("Input.txt");
 var calorieParserService = new CalorieParserService();
-var elfNumber = calorieParserService.FindElfWithMostCalories(file);
+var calorieCount = calorieParserService.FindMaxCaloriesWithMostCalories(file);
 
-Console.WriteLine(elfNumber);
+Console.WriteLine(calorieCount);
