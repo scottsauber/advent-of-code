@@ -6,13 +6,15 @@ public class CalorieParserService
     {
         var elves = elvesCarryingCalories
             .Split(Environment.NewLine + Environment.NewLine)
-            .Select((x, i) => new Elf
+            .Select(x => new 
             {
-                Number = i + 1,
-                CaloriesBeingCarried = x.Split(Environment.NewLine).Select(c => int.Parse(c)).ToList()
+                TotalCaloriesBeingCarried = x.Split(Environment.NewLine)
+                    .Select(c => int.Parse(c))
+                    .ToList()
+                    .Sum()
             });
         return elves
-            .MaxBy(x => x.TotalCalories)!
-            .TotalCalories;
+            .MaxBy(x => x.TotalCaloriesBeingCarried)!
+            .TotalCaloriesBeingCarried;
     }
 }
