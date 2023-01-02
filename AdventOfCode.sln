@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day1", "src\Ad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day1.Tests", "src\AdventOfCode.Day1.Tests\AdventOfCode.Day1.Tests.csproj", "{8CDE7FB4-B856-4020-9023-422ABDA3A7A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day2", "src\AdventOfCode.Day2\AdventOfCode.Day2.csproj", "{BEA3AEEA-36C4-4F84-90CA-A98F8A667D6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day2.Tests", "src\AdventOfCode.Day2.Tests\AdventOfCode.Day2.Tests.csproj", "{8B47C655-C73A-4067-9C9C-EA04BF21EAB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{8CDE7FB4-B856-4020-9023-422ABDA3A7A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CDE7FB4-B856-4020-9023-422ABDA3A7A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CDE7FB4-B856-4020-9023-422ABDA3A7A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA3AEEA-36C4-4F84-90CA-A98F8A667D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA3AEEA-36C4-4F84-90CA-A98F8A667D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA3AEEA-36C4-4F84-90CA-A98F8A667D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA3AEEA-36C4-4F84-90CA-A98F8A667D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B47C655-C73A-4067-9C9C-EA04BF21EAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B47C655-C73A-4067-9C9C-EA04BF21EAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B47C655-C73A-4067-9C9C-EA04BF21EAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B47C655-C73A-4067-9C9C-EA04BF21EAB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
